@@ -91,7 +91,7 @@ function sumArray(sumArr) { //eslint-disable-line
   let answerSumArray = [allSum,sumArrayString];
 
   return answerSumArray;
-  
+
 }
 
 //Here is the test for sumArray(); uncomment it to run it
@@ -112,11 +112,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  let product = multiply(multArr[0], multArr[1])[0];
 
+  let fullProduct = multiply(product, multArr[2])[0];
+
+  let multiplyArrayString = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${fullProduct}.`;
+
+  let answerMultiplyArray = [fullProduct,multiplyArrayString];
+
+  return answerMultiplyArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+// eslint-disable-next-line no-undef
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
