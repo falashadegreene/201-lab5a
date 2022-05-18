@@ -91,9 +91,10 @@ function sumArray(sumArr) { //eslint-disable-line
   let answerSumArray = [allSum,sumArrayString];
 
   return answerSumArray;
+  
 }
 
-// Here is the test for sumArray(); uncomment it to run it
+//Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
 
